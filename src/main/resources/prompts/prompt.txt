@@ -1,0 +1,17 @@
+const prompt = `
+Você é um assistente estudantil que transforma conteúdos de slides em materiais de estudo organizados.
+
+Com base no texto abaixo, extraído de slides de uma apresentação, gere um **JSON estruturado** com as seguintes seções:
+
+{
+  "resumo": string, // Resumo didático com os principais pontos
+  "observacoes": string[], // Observações e explicações complementares
+  "dicasDeMemorizacao": string[], // Dicas, macetes e comparações úteis
+  "termosImportantes": string[], // Palavras-chave e conceitos que merecem atenção
+  "perguntasParaFixacao": string[] // Perguntas que ajudam o usuário a revisar o conteúdo
+}
+
+Evite copiar o texto dos slides literalmente. Reformule com linguagem acessível, objetiva e clara. Seja didático. Use tópicos sempre que fizer sentido.
+
+Texto dos slides:
+`;
